@@ -1,0 +1,43 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+body{
+    background: url('https://png.pngtree.com/thumb_back/fh260/background/20190221/ourmid/pngtree-yellow-tourism-trolley-case-to-chat-with-image_13961.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* https://www.shutterstock.com/image-vector/communicationchattingflat-stylesocial-media-appmobile-instant-260nw-283016144.jpg */
+
+.sign_up_page{
+    background: url('https://img.freepik.com/free-photo/office-desk-workspace-bright-color-yellow-background_169016-38713.jpg');
+    background-size: cover;
+    background-size: cover;
+    background-position: center;
+    min-width: 50%;
+}
+
+.login_page{
+    background: url('https://static.vecteezy.com/system/resources/thumbnails/007/380/452/small/lock-icon-3d-padlock-on-yellow-abstract-background-minimal-concept-photo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-width: 40%;
+}
+
+::-webkit-scrollbar {
+    /* Customize the scrollbar width */
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    /* Customize the scrollbar track */
+    
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+    /* Customize the scrollbar thumb */
+    background: #000;
+    border-radius: 10px;
+}

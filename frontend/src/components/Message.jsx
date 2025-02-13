@@ -1,8 +1,15 @@
+import { useEffect, useRef } from "react"
 
+const Message = ({ message }) => {
 
-const Message = () => {
+  const scroll = useRef();
+
+  useEffect(() => {
+    scroll.current?.scrollIntoView({ behavior: "smooth" })
+  }, [message])
+
   return (
-    <div className="chat chat-end">
+    <div ref={scroll} className="chat chat-end">
       <div className="chat-image avatar">
         <div className="w-10 rounded-full">
           <img
@@ -11,11 +18,11 @@ const Message = () => {
         </div>
       </div>
       <div className="chat-header">
-        
+
         <time className="text-xs opacity-50">12:45</time>
       </div>
-      <div className="chat-bubble">You were the Chosen One!</div>
-      
+      <div className="chat-bubble">{message?.message}</div>
+
     </div>
   )
 }

@@ -52,7 +52,7 @@ const Signup = () => {
     return (
         <div className="sign_up_page min-w-96 mx-auto">
             <div className="w-full p-6 rounded-lg shadow-md">
-                {/* bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100  */}
+              
 
                 <h1 className="text-3xl font-bold text-center ">Signup</h1>
                 <form onSubmit={onSubmitHandler} action="">

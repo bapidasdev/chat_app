@@ -9,15 +9,15 @@ const OtherUsers = () => {
 
     const { otherUsers } = useSelector(store => store.user);
 
-    if (!Array.isArray(otherUsers)) return null;
+    
+    if (!otherUsers) return; 
 
-    console.log(otherUsers, "otherUsers");
-
+   
 
     return (
         <div className='overflow-auto flex-1'>
             {
-                otherUsers?.map((user) => {
+                otherUsers?.otherUsers?.map((user) => {
                     return (
                         <OtherUser key={user._id} user={user} />
                     )

@@ -21,11 +21,10 @@ const Sidebar = () => {
     return (
         <div className='border-r border-slate-500 p-4 flex flex-col  '>
             <form
-                // onSubmit={searchSubmitHandler} 
+                
                 action="" className='flex items-center gap-2'>
                 <input
-                    // value={search}
-                    // onChange={(e) => setSearch(e.target.value)}
+                  
                     className='input input-bordered rounded-md' type="text"
                     placeholder='Search...'
                 />
